@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laba 4</title>
+</head>
+<body>
+    <script>
+        class calculator {
+            constructor(num1, num2) {
+                this.num1 = num1;
+                this.num2 = num2;
+            }
+            
+            sum() {
+                return this.num1 + this.num2;
+            }
+            diff() {
+                return this.num1 - this.num2;
+            }
+            prod() {
+                return this.num1 * this.num2;
+            }
+            quot() {
+                return this.num1 / this.num2;
+            }
+        }
+
+        var calculators = [
+            new calculator(11, 25),
+            new calculator(20, 17),
+            new calculator(9, 9)
+        ];
+
+        document.write(`Сумма: ${calculators[0].sum()}<br>`);
+        document.write(`Разность: ${calculators[1].diff()}<br>`);
+        document.write(`Произведение: ${calculators[1].prod()}<br>`);
+        document.write(`Частное: ${calculators[2].quot()}<br>`);
+
+        
+
+    </script>
+</body>
+</html>
